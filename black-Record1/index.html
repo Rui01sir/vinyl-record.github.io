@@ -15,11 +15,10 @@
 </head>
 <body>
     <div class="b-hero">
-      <img src="./video/DB7B7BD4-912C-431C-8328-EBB67EAEDCEB.png" alt="video" style="position: absolute;width: 1920px;height: 1080px;">
-        <!-- <video autoplay loop muted plays-inline class="b-back-video">
+        <video autoplay loop muted plays-inline class="b-back-video">
           <source src="./video/video.mp3" type="video/mp3">
           <source src="./video/DB7B7BD4-912C-431C-8328-EBB67EAEDCEB.MOV" type="video/mp4">
-        </video> -->
+        </video>
         <nav>
           <input type="checkbox" id="check">
           <label for="check" class="checkbtn">
@@ -126,32 +125,85 @@
           <img src="./img/PG7.png" alt="PG7" style="border-radius:3%;">
         </div>
     </div>
-    
+    <!-- 倫播牆 -->
+    <div class="box23">
+      <span class="slider-span" id="slider-span1" ></span>
+      <span class="slider-span" id="slider-span2" ></span>
+      <span class="slider-span" id="slider-span3" ></span>
+      <span class="slider-span" id="slider-span4" ></span>
+      <span class="slider-span" id="slider-span5" ></span>
+      <span class="slider-span" id="slider-span6" ></span>
+      <span class="slider-span" id="slider-span7" ></span>
 
-    <!-- 製造影片 -->
+      <div class="image-slider">
+        <div class="slides-div" id="slide-1">
+          <img src="./img/img1.jpg" alt="" class="img1" id="img1">
+          <a href="#slider-span1" class="button" id="button-1"></a>
+        </div>
+        <div class="slides-div" id="slide-2">
+          <img src="./img/img2.jpg" alt="" class="img1" id="img2">
+          <a href="#slider-span2" class="button" id="button-2"></a>
+        </div>
+        <div class="slides-div" id="slide-3">
+          <img src="./img/img3.jpg" alt="" class="img1" id="img3">
+          <a href="#slider-span3" class="button" id="button-3"></a>
+        </div>
+        <div class="slides-div" id="slide-4">
+          <img src="./img/img4.jpg" alt="" class="img1" id="img4">
+          <a href="#slider-span4" class="button" id="button-4"></a>
+        </div>
+        <div class="slides-div" id="slide-5">
+          <img src="./img/img5.jpg" alt="" class="img1" id="img5">
+          <a href="#slider-span5" class="button" id="button-5"></a>
+        </div>
+        <div class="slides-div" id="slide-6">
+          <img src="./img/img6.jpg" alt="" class="img1" id="img6">
+          <a href="#slider-span6" class="button" id="button-6"></a>
+        </div>
+        <div class="slides-div" id="slide-7">
+          <img src="./img/img7.jpg" alt="" class="img1" id="img7">
+          <a href="#slider-span7" class="button" id="button-7"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 製造介紹影片 -->
     <div class="b-container3">
       <div class="b-box21">
         <h3>3.添加標籤並按下加熱</h3>
         <p>使用擠出機將這些加熱的乙烯基塊夾在兩個標籤之間。 然後將粗製的乙烯基三明治向前噴射到可以找到壓模的主要壓制區域。 
           壓模就位後，黑膠唱片上就會出現甜美動聽的音樂。</p>
       </div>
-      <div class="b-box23">
-        <iframe width="1440" height="860" src="https://www.youtube.com/embed/6c4bZ8vquXo" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      <div class="b-box24">
+        <iframe width="1440px" height="860px" 
+        src="https://www.youtube.com/embed/Dm9Pp6w4KGU" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen></iframe>
       </div>
-      <p></p>
     </div>
+
+    <!-- 通路 -->
+    <div class="b-container4" style="display: flex;">
+      <div class="b-map" id="map"></div>
+      <div class="b-box25" style="padding: 2%;">
+        <h1>通路</h1>
+        <h4>大安門市</h4>
+        <p>106台北市大安區和平東路一段12巷4號</p>
+        <p>1TEL  02-2227-6666      OPEN 11:00-21:00</p>
+        <h4>中山門市</h4>
+        <p>10491台北市中山區吉林路329巷15號</p>
+        <p>1TEL  02-2227-6100      OPEN 12:00-18:30</p>
+        <h4>信義門市</h4>
+        <p>110台北市信義區松智路17號2樓</p>
+        <p>1TEL  02-2227-6200      OPEN 11:00-21:30</p>
+        <h4>北投門市</h4>
+        <p>112台北市北投區文林北路156號</p>
+        <p>1TEL  02-2227-6000      OPEN 12:00-20:00</p>
+      </div>
+    </div> 
     
-    
-
-
-
-
-
-
-
-
     <!-- footer -->
     <footer>
     <footer class="footer" id="footer">
@@ -207,7 +259,57 @@
         <p>Copyright ©2023 BLACK RECORD. All Rights Reserved</p>
     </div>
 
+    
+    <script>
+      let map
 
+      function initMap(){
+        const myLatLng1 = { lat: 25.026754, lng: 121.523323 };
+        const myLatLng2 = { lat: 25.106618, lng: 121.516408 };
+        const myLatLng3 = { lat: 25.03461, lng: 121.56598 };
+        const myLatLng4 = { lat: 25.06401, lng: 121.53078 };
+        map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 25.048676, lng: 121.512952},
+        zoom: 12,
+        mapId: '9af7d4f7a18e39e',
+        center:myLatLng1
+      });
+      new google.maps.Marker({
+      position: myLatLng1,
+      map,
+      title: "大安門市",
+      });
+      new google.maps.Marker({
+      position: myLatLng2,
+      map,
+      title: "北投門市",
+      });
+      new google.maps.Marker({
+      position: myLatLng3,
+      map,
+      title: "信義門市",
+      });
+      new google.maps.Marker({
+      position: myLatLng4,
+      map,
+      title: "中山門市",
+      });
+      
+      window.initMap = initMap
 
+        navigator.geolocation.getCurrentPosition(function(position){
+          currentPosition = {
+            lat: 25.059447,
+            lng:121.525939,
+          };
+          map.setCenter(currentPosition);
+          map.setZoom(13.5);
+        });
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsHVQhtwOeRXDxJvqnbdBf9QZ5ZTyduBE&callback=initMap&v=weekly"
+      defer
+    ></script>
 </body>
 </html>

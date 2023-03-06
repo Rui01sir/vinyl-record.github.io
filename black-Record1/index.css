@@ -639,26 +639,183 @@ a.active,a:hover{
     top: 4600px;
 }
 
-/* 製造影片 */
+/* 關於 */
 .b-container3{
     overflow: hidden;
     width: 100%;
-    height:1900px;
+    height:2300px;
     background-color: #E0DDD3;
 }
 
+/* 倫播牆 */
 .b-box23{
     position:absolute;
     overflow:hidden;
-    /* width:100%; */
-    margin-left: 15%;
-    /* right:50%; */
-    top: 6600px;
+    /* margin-left: 12%; */
+    top: 7600px;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
+.image-slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    margin-top: 500px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+    overflow: hidden;
+}
 
+.slides-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+}
 
+.img1{
+    border-radius: 20px;
+    position: relative;
+    width: 260px;
+    height: 390px;
+    transition: .5s;
+    filter: saturate(10%);
+}
 
+.button{
+    border-radius: 20px;
+    position: absolute;
+    width: 260px;
+    height: 390px;
+    transition: .5s;
+    background-color: rgba(0,0,0,.4);
+}
+
+.button:hover{
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.4);
+}
+
+#slider-span1:target~.image-slider #img1,
+#slider-span1:target~.image-slider #button-1{
+    width: 380px;
+    height:585px;
+    background-color:transparent;
+    filter: saturate(100%);
+}
+#slider-span2:target~.image-slider #img2,
+#slider-span2:target~.image-slider #button-2{
+    width: 380px;
+    height:585px;
+    background-color:transparent;
+    filter: saturate(100%);
+}
+#slider-span3:target~.image-slider #img3,
+#slider-span3:target~.image-slider #button-3{
+    width: 380px;
+    height:585px;
+    background-color:transparent;
+    filter: saturate(100%);
+}
+#slider-span4:target~.image-slider #img4,
+#slider-span4:target~.image-slider #button-4{
+    width: 380px;
+    height:585px;
+    background-color:transparent;
+    filter: saturate(100%);
+}
+#slider-span5:target~.image-slider #img5,
+#slider-span5:target~.image-slider #button-5{
+    width: 380px;
+    height:585px;
+    background-color:transparent;
+    filter: saturate(100%);
+}
+#slider-span6:target~.image-slider #img6,
+#slider-span6:target~.image-slider #button-6{
+    width: 380px;
+    height:585px;
+    background-color:transparent;
+    filter: saturate(100%);
+}
+#slider-span7:target~.image-slider #img7,
+#slider-span7:target~.image-slider #button-7{
+    width: 380px;
+    height:585px;
+    background-color:transparent;
+    filter: saturate(100%);
+}
+
+#slider-span1:target ~ .image-slider {left:70%;}
+#slider-span2:target ~ .image-slider {left:50%;}
+#slider-span3:target ~ .image-slider {left:25%;}
+#slider-span5:target ~ .image-slider {left:-70%;}
+#slider-span6:target ~ .image-slider {left:-50%;}
+#slider-span7:target ~ .image-slider {left:-25%;}
+
+/* 製造影片 */
+.b-box24{
+    position:absolute;
+    overflow:hidden;
+    /* width:100%; */
+    margin-left: 12%;
+    top: 7400px;
+}
+
+/* 通路 */
+.b-container4{
+    overflow: hidden;
+    width: 100%;
+    height:1900px;
+    background-color: #2C2E26;
+}
+
+.b-map{
+    margin: 8%;
+    width: 50%;
+    height: 100vh;
+}
+
+.b-box25{
+    margin-top:8%; 
+}
+
+.b-box25 h1{
+    margin-top:8%; 
+    font-family:'Noto Sans TC';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 64px;
+    line-height: 41px;
+    color: #C6B269;
+    margin-bottom: 10%;
+}
+
+.b-box25 h4{
+    font-family:'Noto Sans TC';
+    font-style: normal;
+    font-weight:400;
+    font-size: 28px;
+    line-height: 60px;
+    color: #C6B269;
+    padding-top: 8%;
+}
+
+.b-box25 p{
+    font-family:'Noto Sans TC';
+    font-style: normal;
+    font-weight:400;
+    font-size: 28px;
+    line-height:20px;
+    color: #C6B269;
+}
 
 /* footer */
 .footer{
